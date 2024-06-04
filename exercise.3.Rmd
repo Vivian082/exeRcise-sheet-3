@@ -45,6 +45,10 @@ total_2022<-sum(data2022$Anzahl,na.rm = TRUE)
 total_2023<-sum(data2023$Anzahl,na.rm = TRUE)
 ##so from the SUM result I can tell that the 2022 has bigger Babyboom
 
+#3d)
+data2022$year <- 2022
+data2023$year <- 2023
+
 
 
 
