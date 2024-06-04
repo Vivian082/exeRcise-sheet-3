@@ -51,7 +51,15 @@ data2023$year <- 2023
 
 #3e)
 library(dplyr)
-bind_rows(data2022,data2023)
+combined_data<-bind_rows(data2022,data2023)
+
+#3f)
+popular_names <- combined_data %>%
+  group_by(Vorname) %>%
+  summarize(Total = sum(Anzahl, na.rm = TRUE)) %>%
+  arrange(desc(Total)) %>%
+  head(10)
+knitr::kable(popular_names, caption = "Top 10 Baby Names in Munich (2022 & 2023)")
 
 
 
