@@ -34,6 +34,16 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ##Strengths:Version control: Git allows tracking changes and collaborating with others seamlessly.Branching and merging: Git supports multiple workflows with branches and can merge changes efficiently.
 ##Weaknesses:Steep learning curve: Beginners might find Git commands and concepts complex.Merge conflicts: Resolving conflicts can be challenging, especially in large projects.
 
+#3b)
+data2022<-read.csv("open_data_portal_2022.csv")
+data2023<-read.csv("vornamen-muenchen-2023.csv")
+data2022$Anzahl <- as.numeric(gsub(",", "", data2022$Anzahl))
+data2023$Anzahl <- as.numeric(gsub(",", "", data2023$Anzahl))
+
+
+
+
+
 
 
 
