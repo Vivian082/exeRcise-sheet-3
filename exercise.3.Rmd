@@ -40,6 +40,11 @@ data2023<-read.csv("vornamen-muenchen-2023.csv")
 data2022$Anzahl <- as.numeric(gsub(",", "", data2022$Anzahl))
 data2023$Anzahl <- as.numeric(gsub(",", "", data2023$Anzahl))
 
+#3c)
+total_2022<-sum(data2022$Anzahl,na.rm = TRUE)
+total_2023<-sum(data2023$Anzahl,na.rm = TRUE)
+##so from the SUM result I can tell that the 2022 has bigger Babyboom
+
 
 
 
