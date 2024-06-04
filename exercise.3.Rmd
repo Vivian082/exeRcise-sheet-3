@@ -49,6 +49,10 @@ total_2023<-sum(data2023$Anzahl,na.rm = TRUE)
 data2022$year <- 2022
 data2023$year <- 2023
 
+#3e)
+library(dplyr)
+bind_rows(data2022,data2023)
+
 
 
 
