@@ -62,6 +62,15 @@ popular_names <- combined_data %>%
 knitr::kable(popular_names, caption = "Top 10 Baby Names in Munich (2022 & 2023)")
 
 
+#4c)
+##Dataset Name: 20th century deaths of US - CDC
+##Link: https://github.com/owid/owid-datasets/blob/master/datasets/20th%20century%20deaths%20in%20US%20-%20CDC/20th%20century%20deaths%20in%20US%20-%20CDC.csv
+
+
+
+
+
+
 
 
 
