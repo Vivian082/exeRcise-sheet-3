@@ -67,17 +67,9 @@ knitr::kable(popular_names, caption = "Top 10 Baby Names in Munich (2022 & 2023)
 ##Link: https://github.com/owid/owid-datasets/blob/master/datasets/20th%20century%20deaths%20in%20US%20-%20CDC/20th%20century%20deaths%20in%20US%20-%20CDC.csv
 
 #4d)
-##Question: Which decade in the 20th century had the highest number of disease deaths in the US?  reason:By the number of deaths one can surmise the state of health ,epidemics and the medical treating level in the US
 ##Question: Which decade in the 20th century had the highest number of deaths in the US?  reason:By the number of deaths one can surmise the state of health ,epidemics ,war and the medical treating level in the US
 
 
-#4e)
-data1<-read.csv("20th century deaths in US - CDC.csv")
-library(dplyr)
-library(dplyr)
-deaths_sum_result <- data1 %>% 
-  select(data1$) %>% 
-  summarise_all(sum)
 
 
 
