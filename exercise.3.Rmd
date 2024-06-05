@@ -29,7 +29,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-```{r}
+
 #1d)
 ##Strengths:Version control: Git allows tracking changes and collaborating with others seamlessly.Branching and merging: Git supports multiple workflows with branches and can merge changes efficiently.
 ##Weaknesses:Steep learning curve: Beginners might find Git commands and concepts complex.Merge conflicts: Resolving conflicts can be challenging, especially in large projects.
@@ -37,6 +37,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 #2a)
 ##my repository link:https://github.com/Vivian082/exeRcise-sheet-3
 
+```{r}
 #3b)
 data2022<-read.csv("open_data_portal_2022.csv")
 data2023<-read.csv("vornamen-muenchen-2023.csv")
@@ -64,6 +65,8 @@ popular_names <- combined_data %>%
   head(10)
 knitr::kable(popular_names, caption = "Top 10 Baby Names in Munich (2022 & 2023)")
 
+```
+
 
 #4c)
 ##Dataset Name: 20th century deaths of US - CDC
@@ -72,6 +75,7 @@ knitr::kable(popular_names, caption = "Top 10 Baby Names in Munich (2022 & 2023)
 #4d)
 ##Question: Which decade in the 20th century had the highest number of deaths in the US?  reason:By the number of deaths one can surmise the state of health ,epidemics ,war and the medical treating level in the US
 
+```{r}
 #4e)
 data1<-read.csv("20th century deaths in US - CDC.csv")
 ranking_most_deaths<-sort(data1$Total.deaths....Deaths,decreasing = TRUE)
