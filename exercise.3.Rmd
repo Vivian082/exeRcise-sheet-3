@@ -69,6 +69,16 @@ knitr::kable(popular_names, caption = "Top 10 Baby Names in Munich (2022 & 2023)
 #4d)
 ##Question: Which decade in the 20th century had the highest number of deaths in the US?  reason:By the number of deaths one can surmise the state of health ,epidemics ,war and the medical treating level in the US
 
+#4e)
+data1<-read.csv("20th century deaths in US - CDC.csv")
+ranking_most_deaths<-sort(data1$Total.deaths....Deaths,decreasing = TRUE)
+print(ranking_most_deaths)
+index_highest_death <- which(data1$Total.deaths....Deaths == ranking_most_deaths[1])
+year_highest_death <- data1$Year[index_highest_death]
+print(year_highest_death)
+
+
+
 
 
 
