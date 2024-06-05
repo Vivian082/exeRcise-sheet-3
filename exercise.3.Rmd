@@ -34,6 +34,9 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 ##Strengths:Version control: Git allows tracking changes and collaborating with others seamlessly.Branching and merging: Git supports multiple workflows with branches and can merge changes efficiently.
 ##Weaknesses:Steep learning curve: Beginners might find Git commands and concepts complex.Merge conflicts: Resolving conflicts can be challenging, especially in large projects.
 
+#2a)
+##my repository link:https://github.com/Vivian082/exeRcise-sheet-3
+
 #3b)
 data2022<-read.csv("open_data_portal_2022.csv")
 data2023<-read.csv("vornamen-muenchen-2023.csv")
@@ -77,6 +80,15 @@ index_highest_death <- which(data1$Total.deaths....Deaths == ranking_most_deaths
 year_highest_death <- data1$Year[index_highest_death]
 print(year_highest_death)
 
+#4f)
+library(ggplot2)
+ggplot(data1, aes(x = data1$Year, y =data1$Total.deaths....Deaths )) +
+  geom_line(color = "blue") +
+  labs(title = "Total Deaths in the US (20th Century)", 
+       x = "Year", 
+       y = "Total Deaths") +
+  theme_minimal()
+
 
 
 
@@ -96,4 +108,3 @@ print(year_highest_death)
 
 
 ```
-
